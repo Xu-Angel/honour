@@ -1,0 +1,482 @@
+html,
+body {
+  background-color: #f5f5f5;
+}
+.wrap {
+  width: 100%;
+  opacity: 1;
+  top: 0;
+  zoom: 1;
+  transition: .3s;
+  -webkit-transition: .3s;
+  position: relative;
+  /*缠绕体已经定位！*/
+}
+/*.content-wrap{
+  overflow: hidden;
+  overflow-y: auto;!*配置轮播*!
+}
+.content{
+  background-color: #ededed;
+}
+.slide .pointer-ul .current{
+  background: #4b67af;
+}
+.content-news .content-news-container .now-tab a,
+.content-hero-list .hero-container .hero-nav .now-tab a
+{
+  color: #db9e3f;
+  border-bottom: 2px solid #db9e3f;
+}
+.content-news .content-news-container .now-tab a::after,
+.content-hero-list .hero-container .hero-nav .now-tab a::after
+{
+  position: absolute;
+  display: inline-block;
+  width: .5rem;
+  height: 3px;
+  left: 0;
+  background: #db9e3f;
+  top: auto;
+  bottom: -.02rem;
+}*/
+/*----共用↑------*/
+/*------头部广告------*/
+.home-top {
+  position: fixed;
+  width: 100%;
+  height: 0.9rem;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background-size: 7.5rem;
+  background-color: black;
+}
+.logo-count {
+  width: 3rem;
+  top: .16rem;
+  left: .34rem;
+  padding-left: .8rem;
+  height: .6rem;
+  position: absolute;
+}
+.logo-img {
+  height: .6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: .6rem;
+  background: url("../img/index.png") 0 -6.16rem no-repeat;
+  background-size: 7.5rem;
+}
+.logo-title h1 {
+  font-size: 0.26rem;
+  line-height: 34 100rem;
+  color: #fff;
+}
+.logo-count .logo-title p {
+  font-size: 0.16rem;
+  color: #666;
+}
+.home-top .download {
+  position: absolute;
+  width: 1.2rem;
+  height: 0.48rem;
+  top: 0.18rem;
+  right: 0.32rem;
+}
+.home-top .download a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/index.png") -1.18rem -6.18rem no-repeat;
+  background-size: 7.5rem;
+}
+.home-bottom {
+  background: #db9e3f;
+  height: .84rem;
+  width: 100%;
+  background-size: 100% auto;
+  font-size: 0;
+  z-index: 10;
+  margin-top: .9rem;
+}
+.home-bottom ul {
+  height: 100%;
+}
+.home-bottom ul li {
+  width: 33.33333%;
+  height: .84rem;
+  float: left;
+  line-height: .84rem;
+}
+.home-bottom a {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  display: inline-block;
+  color: #fff;
+  font-size: .26rem;
+  text-indent: 0;
+}
+/*----------- 搜索框 -----------*/
+.search {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  padding: 0.1rem;
+  position: relative;
+}
+.search span {
+  position: absolute;
+  left: 0.15rem;
+  top: 0.13rem;
+}
+.search input {
+  width: 96%;
+  height: 0.5rem;
+  font-size: 0.2rem;
+  padding-left: 0.25rem;
+  border: 1px solid #d3d3d4;
+}
+/*-------------carousel---------------*/
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 2.55rem;
+  overflow: hidden;
+}
+.carousel ul {
+  height: 2.55rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.carousel ul li {
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  text-align: center;
+}
+/*------------hot-tv--------------*/
+.hot-tv {
+  background-color: #fff;
+  height: 100%;
+  margin-top: 0.2rem;
+  padding: 0 0.1rem;
+}
+.hot-tv .hot-top {
+  height: 0.6rem;
+  border-bottom: 1px solid #ddd;
+}
+.hot-tv .hot-top .hot-title {
+  font-size: 0.3rem;
+  font-weight: bold;
+  background: url("../img/icon_01.png") left center no-repeat;
+  background-size: 0.3rem;
+  padding-left: 0.4rem;
+}
+.hot-tv .hot-top ul {
+  float: right;
+}
+.hot-tv .hot-top ul li {
+  float: left;
+  font-size: 0.3rem;
+  margin-right: 0.15rem;
+  color: #343440;
+}
+.hot-tv .hot-top ul li:first-child {
+  border-bottom: 1px solid #db9e3f;
+  color: #db9e3f;
+}
+.hot-tv .hot-intr {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  height: 3.2rem;
+  margin-left: 0.3rem;
+  margin-top: 0.15rem;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*visibility: hidden;*/
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day {
+  height: 100%;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul {
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.25rem;
+  border-bottom: 1px solid #ddd;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li p {
+  display: inline-block;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li .click-span {
+  padding-left: 0.25rem;
+  background: url("../img/icon_01.png") left center no-repeat;
+  background-size: 0.2rem;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child {
+  width: 100%;
+  height: 1.5rem;
+  line-height: 0.4rem;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child .hot-tv-l {
+  width: 2.39rem;
+  height: 1.3rem;
+  position: relative;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child .hot-tv-l img {
+  width: 100%;
+  height: 100%;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child .hot-tv-r {
+  width: 4rem;
+  height: 1.29rem;
+  margin-left: 0.2rem;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child .hot-tv-r .hot-day-click {
+  margin-top: 0.27rem;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child .hot-tv-r .hot-day-click span {
+  padding-left: 0.25rem;
+  padding-right: 0.2rem;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child .hot-tv-r .hot-day-click span:first-child {
+  background: url("../img/icon_01.png") left center no-repeat;
+  background-size: 0.2rem;
+}
+.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child .hot-tv-r .hot-day-click span:last-child {
+  background: url("../img/video-tm.png") left center no-repeat;
+  background-size: 0.2rem;
+}
+.hot-tv .hot-all {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.3rem;
+  text-align: center;
+}
+/*---------------hero-strategy---------------*/
+.hero-strategy {
+  margin-top: 0.2rem;
+  background-color: #fff;
+  height: 100%;
+}
+.hero-strategy .share-title {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.3rem;
+  margin: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.4rem;
+  background: url("../img/icon_02.png") left center no-repeat;
+  background-size: 0.3rem;
+  border-bottom: 1px solid #d3d3d4;
+}
+.hero-strategy .share-hero {
+  height: 0.9rem;
+  margin: 0.1rem 0.1rem 0;
+}
+.hero-strategy .share-hero ul li {
+  width: 0.9rem;
+  height: 0.9rem;
+  float: left;
+  font-size: 0.2rem;
+  margin-left: 0.07rem;
+  position: relative;
+}
+.hero-strategy .share-hero ul li:last-child {
+  text-align: center;
+  line-height: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 0.1rem;
+  margin-left: 0.5rem;
+  background-color: #ddd;
+}
+.hero-strategy .share-hero ul li i {
+  width: 93%;
+  text-align: center;
+  position: absolute;
+  bottom: 0.03rem;
+  left: 0.03rem;
+  color: #fff;
+  border-radius: 0 0 3px 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-strategy .share-hero-open {
+  display: none;
+  width: 95%;
+  border: 1px solid #ddd;
+  margin: 0.1rem auto 0;
+  overflow: hidden;
+}
+.hero-strategy .share-hero-open .hero-img {
+  width: 5.26rem;
+  height: 100%;
+  padding: 0.15rem;
+  position: relative;
+}
+.hero-strategy .share-hero-open .hero-img ul {
+  position: absolute;
+}
+.hero-strategy .share-hero-open .hero-img ul li {
+  float: left;
+  font-size: 0.2rem;
+  text-align: center;
+  margin-right: 0.2rem;
+  margin-bottom: 0.1rem;
+}
+.hero-strategy .share-hero-open .hero-type ul li {
+  width: 1.5rem;
+  height: 0.5rem;
+  font-weight: bold;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: 0.2rem;
+  background-color: #ddd;
+}
+.hero-strategy .share-hero-open .hero-type ul li.current {
+  color: #fff;
+  background-color: #db9e3f;
+}
+.hero-strategy .share-hero-tv {
+  margin-top: 0.1rem;
+}
+.hero-strategy .share-hero-tv .share-hero-t {
+  height: 0.35rem;
+  line-height: 0.35rem;
+  font-size: 0.2rem;
+  background-color: #ddd;
+}
+.hero-strategy .share-hero-tv .share-hero-t p {
+  padding: 0 0.15rem;
+}
+.hero-strategy .share-hero-tv .share-hero-t p span {
+  float: left;
+  margin: 0 0.1rem;
+}
+.hero-strategy .share-hero-tv .share-hero-t p span:last-child {
+  float: right;
+}
+.hero-strategy .share-hero-tv .share-hero-middle {
+  border-bottom: 1px solid #ddd;
+  margin: 0.2rem 0.2rem 0 0.2rem;
+}
+.hero-strategy .share-hero-tv .share-hero-middle ul {
+  height: 100%;
+}
+.hero-strategy .share-hero-tv .share-hero-middle ul li {
+  float: left;
+  width: 3.42rem;
+  padding-bottom: 0.2rem;
+  margin-right: 0.2rem;
+}
+.hero-strategy .share-hero-tv .share-hero-middle ul li:last-child {
+  margin-right: 0;
+}
+.hero-strategy .share-hero-tv .share-hero-middle ul li img {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 0.15rem;
+}
+.hero-strategy .share-hero-tv .share-hero-middle ul li p {
+  font-size: 0.3rem;
+}
+.hero-strategy .share-hero-tv .share-hero-middle ul li .share-hero-look {
+  margin-top: 0.2rem;
+}
+.hero-strategy .share-hero-tv .share-hero-middle ul li .share-hero-look span {
+  font-size: 0.17rem;
+}
+.hero-strategy .share-hero-tv .share-hero-middle ul li .share-hero-look span:first-child {
+  padding-left: 0.25rem;
+  background: url("../img/icon_01.png") left center no-repeat;
+  background-size: 0.2rem;
+}
+.hero-strategy .share-hero-tv .share-hero-mag {
+  padding: 0.2rem;
+}
+.hero-strategy .share-hero-tv .share-hero-mag ul li {
+  height: 1.6rem;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.hero-strategy .share-hero-tv .share-hero-mag ul li img {
+  width: 2.3rem;
+  height: 1.4rem;
+  margin-right: 0.35rem;
+}
+.hero-strategy .share-hero-tv .share-hero-mag ul li a {
+  position: relative;
+  height: 1.4rem;
+  display: block;
+}
+.hero-strategy .share-hero-tv .share-hero-mag ul li a p {
+  font-size: 0.25rem;
+}
+.hero-strategy .share-hero-tv .share-hero-mag ul li span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 0.2rem;
+}
+.hero-strategy .share-hero-tv .more-hero-about {
+  font-size: 0.25rem;
+  text-align: center;
+}
+.hero-strategy .share-hero-tv .more-hero-about span {
+  color: #d59b40;
+  margin: 0 0.1rem;
+}
+/*------------------ wonderful-time --------------------*/
+.wonderful-time {
+  margin-top: 0.2rem;
+  background-color: #fff;
+}
+.wonderful-time .wonderful-title {
+  margin: 0 0.5rem;
+  font-size: 0.3rem;
+  font-weight: bold;
+  padding: 0.1rem 0;
+  padding-left: 0.4rem;
+  background: url("../img/icon_03.png") left center no-repeat;
+  background-size: 0.3rem;
+  border-bottom: 1px solid #ddd;
+}
+.wonderful-time .wonderful-tv-title {
+  margin: 0.1rem 0.5rem;
+}
+.wonderful-time .wonderful-tv-title ul li {
+  margin-right: 0.8rem;
+  font-size: 0.25rem;
+  float: left;
+}
+.wonderful-time .wonderful-tv-title ul li:last-child {
+  margin-right: 0;
+}
+.wonderful-time .wonderful-tv-title ul li.current {
+  color: #db9e3f;
+  border-bottom: 1px solid #db9e3f;
+}

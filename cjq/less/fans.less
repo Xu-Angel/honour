@@ -1,0 +1,264 @@
+@r:100rem;
+.warp{
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  .search-warp{
+    width: 100%;
+    height: 80/@r;
+    position: fixed;
+    top: 0;
+    background-color: #080e16;
+    z-index: 30;
+    .icon-search{
+      display: block;
+      background: url("../img/spr.png") no-repeat 0 0;
+      background-size: 750/@r;
+      width: 30/@r;
+      height: 30/@r;
+      position: absolute;
+      top: 28/@r;
+      left: 190/@r;
+    }
+    p{
+      font-size: 30/@r;
+      text-align: center;
+      color: #fff;
+      padding: 10/@r;
+      margin: 10/@r;
+      border: 1px solid #273a4a;
+    }
+  }/*seach-warp end*/
+  .bigv-act{
+    width: 100%;
+    margin-left: 10/@r;
+    margin-top: 85/@r;
+    height: 60/@r;
+    line-height: 60/@r;
+    position: relative;
+    .bigv-title{
+      display: inline-block;
+      width: 130/@r;
+      height: 60/@r;
+      font-size: 30/@r;
+      font-weight: bold;
+      color: #fff;
+      background-color: #14222d;
+      position: absolute;
+      left: -10/@r;
+      padding-left: 10/@r;
+      z-index: 3;
+    }
+    .bigv-con{
+      width: 590/@r;
+      overflow: hidden;
+      position: absolute;
+      span{
+        font-size: 26/@r;
+        float: left;
+        color: #fff;
+        &.bigv-name{
+          color: #7ba1c2;
+        }
+        &.bigv-work{
+          color: #7ba1c2;
+        }
+      }
+    }
+    .bigv-pic{
+      padding-right: 10/@r;
+      position: absolute;
+      background-color: #14222d;
+      right: 10/@r;
+      top: 0;
+      img{
+        width: 50/@r;
+        height: 50/@r;
+      }
+    }
+  }/*bigv-act*/
+  .carousel{
+    height: 100%;
+    padding: 10/@r 0;
+    margin: 0 10/@r;
+    box-sizing: border-box;
+    .carousel-left{
+      height: 100%;
+      width: 70%;
+      overflow: hidden;
+      position: relative;
+      .carousel-img{
+        width: 500%;
+        height: 100%;
+        margin: 0 auto;
+        padding-bottom: 1.2rem;
+        li{
+          float: left;
+          width: 20%;
+          height: 100%;
+
+        }
+      }
+      .carousel-doc{
+        position: absolute;
+        right: 0;
+        bottom: 10/@r;
+        li{
+          width: 20/@r;
+          height: 20/@r;
+          background-color: #fff;
+          border-radius: 5/@r;
+          float: left;
+          margin-right: 20/@r;
+          &.current{
+            background-color: #4b67af;
+          }
+        }
+      }
+    }
+    .carousel-right{
+      height: 100%;
+      width: 27%;
+      img:first-child{
+        margin-bottom: 22/@r;
+      }
+    }
+  }/*carousel*/
+  .penl{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10/@r 0;
+    margin: 0 10/@r;
+    .penl-top{
+      height: 40/@r;
+      .penl-title{
+        float: left;
+        width: 140/@r;
+        height: 28/@r;
+        background: url("../img/spr.png") no-repeat -270/@r 0;
+        background-size: 750/@r;
+      }
+      .penl-time{
+        font-size: 26/@r;
+        .penl-day{
+          border-radius: 5/@r;
+          border: 1px solid #959595;
+          color: #959595;
+          padding: 2/@r 30/@r;
+          margin-right: 10/@r;
+          &.current{
+            color: #857c28;
+            border: 1px solid #908224;
+            background-color: #131f2a;
+          }
+        }
+      }
+    }
+    .penl-mag-l{
+      width: 100%;
+      height: 270/@r;
+      overflow: hidden;
+      backface-visibility: hidden;
+      background: rgba(25,35,49,.74);
+      box-shadow: 0 1/@r 1/@r #000;
+      position: relative;
+      .mag-mou{
+        position: absolute;
+        width: 100%;
+        padding: 0 20/@r;
+        margin-top: 20/@r;
+        ul{
+          li{
+            height: 60/@r;
+            line-height: 50/@r;
+            border-bottom: 1px solid #273a4a;
+            font-size: 25/@r;
+            span{
+              color: #9eb1d5;
+              &.mag-title{
+                border: 1px solid #304864;
+                border-radius: 2/@r;
+                background: #26374b;
+                font-size: 25/@r;
+                padding: 3/@r;
+              }
+              &.mag-con{
+                margin-left: 10/@r;
+              }
+              &.mag-men{
+                font-size: 20/@r;
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*人气作品*/
+  .penl{
+    .penl-top{
+      .penl-title:last-child{
+        background-position: -424/@r 0;
+      }
+    }
+    .penl-mag{
+      height: 100%;
+      ul{
+        li{
+          height: 100/@r;
+          border-bottom: 1px solid #273a4a;
+          padding: 25/@r;
+          font-size: 30/@r;
+          position: relative;
+          img{
+            float: left;
+            height: 102/@r;
+            width: 133/@r;
+            margin-right: 20/@r;
+          }
+          .cont{
+            h1{
+              color: #fff;
+            }
+            p{
+              color: #7ea3b7;
+            }
+            span{
+              font-size: 22/@r;
+              color: #3b4e5d;
+              &.mag-watch:before{
+                 display: inline-block;
+                 width: 20/@r;
+                 content: "";
+                 margin-top: -70/@r;
+                 height: 12/@r;
+                 background: url("../img/spr.png") -136/@r -48/@r no-repeat;
+                 background-size: 750/@r;
+               }
+              &.mag-zan:before{
+                display: inline-block;
+                width: 25/@r;
+                content: "";
+                margin-top: -70/@r;
+                height: 15/@r;
+                background: url("../img/spr.png") -180/@r -48/@r no-repeat;
+                background-size: 750/@r;
+              }
+            }
+          }
+          .mag-ex{
+            position: absolute;
+            top: 25/@r;
+            right: 25/@r;
+            border: 1px solid #304864;
+            border-radius: 2/@r;
+            background: #26374b;
+            font-size: 25/@r;
+            padding: 3/@r;
+            color: #9eb1d5;
+          }
+        }
+      }
+    }
+  }
+}

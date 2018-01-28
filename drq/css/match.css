@@ -1,0 +1,286 @@
+.wrap{
+    background:#f1f1f1;
+    position:relative;
+}
+/*------头部广告------*/
+.home-top {
+  position:fixed;
+  width: 100%;
+  height:1rem;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background-size: 7.5rem;
+  background-color: black;
+}
+.logo-count{
+  width: 3rem;
+  top: .16rem;
+  left: .34rem;
+  padding-left: .8rem;
+  height: .6rem;
+  position: absolute;
+}
+.logo-img{
+  height: .6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: .6rem;
+  background: url("../img/index.png") 0 -6.16rem no-repeat;
+  background-size: 7.5rem;
+}
+.logo-title h1{
+  font-size: 0.26rem;
+  line-height: 34 100rem;
+  color: #fff;
+}
+.logo-count .logo-title p{
+    font-size:.20rem;
+    color: #7e859e;
+}
+.home-top .download {
+  position: absolute;
+  width: 1.2rem;
+  height: 0.48rem;
+  top: 0.18rem;
+  right: 0.32rem;
+}
+.home-top .download a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/index.png") -1.18rem -6.18rem no-repeat;
+  background-size: 7.5rem;
+}
+.home-bottom {
+  background: #db9e3f;
+  height: .8rem;
+  width: 100%;
+  background-size: 100% auto;
+  font-size: 0;
+  z-index: 10;
+  margin-top:1rem;
+}
+.home-bottom ul {
+  height: 100%;
+}
+.home-bottom ul li {
+  width: 33.33333%;
+  height:.8rem;
+  float: left;
+  line-height:.8rem;
+}
+.home-bottom a{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  display: inline-block;
+  color: #fff;
+  font-size:.26rem;
+  text-indent: 0;
+}
+/*内容区开始*/
+.tab-controller-container .tab-controller  li.now{
+	background:#f1f1f1;
+}
+.tab-controller-container .tab-controller li.now a{
+	border-bottom:.02rem solid #d59b40;
+	color:#d59b40;
+}
+.container{
+	/*padding:.1rem;*/
+	height: 100%;
+}
+/*tab-controller-container开始*/
+.tab-controller-container{
+	height:.6rem;
+}
+.tab-spr, .tab-wdspr, .tab-twspr{
+    width:7.1rem;
+	height:.7rem;
+    margin: 0 auto;
+}
+.tab-controller-container .tab-controller li{
+	float: left;
+	height:.7rem;
+	line-height: .7rem;
+	margin: 0 .12rem;
+}
+.tab-controller-container .tab-controller li:first-child{
+	margin-left: 0;
+}
+.tab-controller-container .tab-controller li:last-child{
+	margin-right: 0;
+}
+.tab-controller-container .tab-controller li a{
+	display: block;
+	height:.69rem;
+	line-height: .69rem;
+	font-size:.26rem;
+	color:#333;
+	
+}
+/*tab-controller-container结束*/
+/*王者荣耀职业联赛开始*/
+.slide-content{
+	
+}
+.mc_block {
+    width:7.1rem; 
+    padding:.1rem; 
+}
+.mc_descinfo_title {
+    color: #00ADFF;
+    font-weight:bold;
+    font-size:.26rem;
+}
+.mc_descinfo_type{
+    font-size:12px;
+    padding:.5% 2%;
+    border: 1px solid #A2A2A2;
+    color: #A2A2A2;
+    border-radius: 50px;
+    text-align:center;
+    margin-left:4%;
+}
+.mc_data{
+    color: #676869;
+    font-size:12px;
+    margin-top:.06rem;
+}
+
+.mc_lineinfo{
+    width: 7.1rem;
+    height:.4rem;
+    line-height:.4rem;
+    padding-bottom:.1rem;
+}
+.mc_w{
+    padding: 0.08rem 0.16rem;
+    margin-left:3%;
+    color:#fff;
+    text-align:center;
+    border-radius:8px;
+    background:#00ADFF;
+    font-size:12px;
+}
+.mc_wr{
+    color: #8D949F;
+    margin-left: 3%;
+}
+
+.mc_video{
+    width:7.5rem;
+    height:3.6rem;
+    overflow: hidden;
+}
+.mc_video .videoplaceholder{
+    display:block;
+    position:relative;
+    width:7.5rem;
+    height:3.6rem;
+}
+.videoplaceholder img{
+	width: 100%;
+	height: 100%;
+}
+.tvp_overlay_play{
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    bottom: 10px;
+    width: 76px;
+    height: 50px;
+    line-height:50px;
+    margin: auto!important;
+    overflow: hidden;
+    font-size: 0;
+    text-align: center;
+    background: rgba(23,23,23,.9);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tvp_button_play {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 30px;
+    top: 14px;
+    margin: auto;
+    overflow: hidden;
+    vertical-align: middle;
+    border: 20px solid transparent;
+    border-width: 12px 21px;
+    border-left-color: #fff;
+}
+/*赛事资讯开始*/
+.mc_allB_news {
+    width: 100%;
+}
+.mc_allB {
+    position: relative;
+    width:100%;
+    height:.49rem;
+    line-height:.49rem;
+    text-align: center;
+    color: #a2a2a2;
+    font-size:.24rem;
+    background: #e4e4e4;
+    margin-top:.1rem;
+    margin-bottom:.1rem;
+}
+.mc_gamemsg{
+	padding-left:.2rem;
+	padding-right:.2rem;
+}
+.marchLiCont .mess_list ul li a{
+    display: inline-block;
+    font-size:.22rem;
+    color:#333;
+    line-height:.52rem;
+    height:.52rem;
+    width: 85%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.marchLiCont .mess_list ul li time{
+    float: right;
+    color: #9e9e9e;
+    font-size: 0.2rem;
+    line-height:.52rem;
+    height:.52rem;
+}
+/*王者荣耀职业联赛结束*/
+/*加载更多*/
+.load-more{
+	width:6.4rem;
+	margin:.2rem auto;
+	border: 1px ;
+	background: #e6e6e6;
+	border-radius:20px;
+}
+.load-more a{
+	display: block;
+	width: 100%;
+	height: .49rem;
+	line-height: .49rem;
+	text-align: center;
+	font-size:.24rem;
+}
+
+
+
+
+
+
+
+
