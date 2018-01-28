@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,10 +69,10 @@
                         </div><!--新闻内容结束-->
                         </div><!--新闻结束-->
                         <div class="info-con">
-                                <a href="javascript:alert('敬请期待！')"><span class="pic-wp"><img src="//game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20180122/3f7dc6ecc5fe9191610e91b8f0398f90.jpg" alt="英雄关系站"> <b>英雄关系站</b></span> <span class="more"><i></i></span></a>
+                                <a href="javascript:alert('敬请期待！')"><span class="pic-wp"><img src="img/direnjielibai.jpg" alt="英雄关系站"> <b>英雄关系站</b></span> <span class="more"><i></i></span></a>
                         </div><!--英雄关系站结束-->
                         <div class="info-con">
-                                <a href=""><span class="pic-wp"><img src="//game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20180122/e31df40aebd7e688ef3791c900bf8b07.jpg" alt="皮肤"> <b>皮肤</b></span> <span class="more"><i></i></span></a>
+                                <a href=""><span class="pic-wp"><img src="img/kaixiaoqiao.jpg" alt="皮肤"> <b>皮肤</b></span> <span class="more"><i></i></span></a>
                         </div><!--皮肤结束-->
                     </div><!--最近更新结束-->
                     <div class="slider-box">
@@ -125,8 +125,8 @@
                 </div>
                 <i class="close"></i><!--关闭动画按钮-->
             </div><!--页面动画结束-->
-            <video autoplay="autoplay" loop="loop" src="img/video1.mp4"></video>
-            <i class="close-video"></i><!--页面盒子关闭按钮-->
+            <video style="z-index:6000" autoplay="autoplay" loop="loop" src="img/video1.mp4"></video>
+            <i style="z-index:6005" class="close-video"></i><!--页面盒子关闭按钮-->
         </div>
     </div><!--主内容结束-->
 </div><!--缠绕体结束-->
@@ -190,6 +190,7 @@
  var closeBtn=document.querySelector('.close');
    closeBtn.addEventListener('click',function () {
 this.parentElement.style.display='none';
+this.parentElement.nextElementSibling.play()
    });
     var closeVideo=document.querySelector('.close-video');
    closeVideo.addEventListener('click',function () {
