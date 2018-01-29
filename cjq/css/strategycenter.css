@@ -135,47 +135,55 @@ body {
   top: 0.13rem;
 }
 .search input {
-  width: 96%;
+  width: 95%;
   height: 0.5rem;
   font-size: 0.2rem;
-  padding-left: 0.25rem;
+  padding-left: 0.35rem;
   border: 1px solid #d3d3d4;
 }
 /*-------------carousel---------------*/
 .carousel {
   position: relative;
   width: 100%;
-  height: 2.55rem;
-  overflow: hidden;
+  height: 2.7rem;
 }
-.carousel ul {
-  height: 2.55rem;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  backface-visibility: hidden;
-}
-.carousel ul li {
-  float: left;
-  width: 100%;
+.carousel .carousel-img {
+  width: 600%;
   height: 100%;
-  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel .carousel-img li {
+  float: left;
+  width: 16.6666666%;
+  height: 100%;
+}
+.carousel .carousel-doc {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  text-align: center;
+  right: 0;
+  bottom: 0.1rem;
+}
+.carousel .carousel-doc li {
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 0.05rem;
+  float: left;
+  margin-right: 0.2rem;
+}
+.carousel .carousel-doc li.current {
+  background-color: #4b67af;
 }
 /*------------hot-tv--------------*/
 .hot-tv {
   background-color: #fff;
   height: 100%;
   margin-top: 0.2rem;
-  padding: 0 0.1rem;
 }
 .hot-tv .hot-top {
   height: 0.6rem;
+  line-height: 0.6rem;
   border-bottom: 1px solid #ddd;
+  margin: 0 0.1rem;
 }
 .hot-tv .hot-top .hot-title {
   font-size: 0.3rem;
@@ -188,45 +196,43 @@ body {
   float: right;
 }
 .hot-tv .hot-top ul li {
+  height: 0.5rem;
+  line-height: 0.5rem;
   float: left;
   font-size: 0.3rem;
   margin-right: 0.15rem;
   color: #343440;
 }
-.hot-tv .hot-top ul li:first-child {
-  border-bottom: 1px solid #db9e3f;
+.hot-tv .hot-top ul li.now {
+  border-bottom: 2px solid #db9e3f;
   color: #db9e3f;
 }
 .hot-tv .hot-intr {
-  width: 100%;
-  height: 100%;
+  width: 97%;
+  height: 3rem;
+  margin: 0.1rem;
+}
+.hot-tv .hot-intr .hot-intr-all {
+  height: 3rem;
   position: relative;
   overflow: hidden;
   backface-visibility: hidden;
-  height: 3.2rem;
-  margin-left: 0.3rem;
-  margin-top: 0.15rem;
 }
 .hot-tv .hot-intr .hot-intr-all .hot-intr-item {
+  width: 100%;
   float: left;
   position: absolute;
   top: 0;
   left: 0;
-  /*visibility: hidden;*/
-}
-.hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day {
-  height: 100%;
+  visibility: hidden;
 }
 .hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul {
-  position: relative;
-  overflow: hidden;
-  backface-visibility: hidden;
   height: 100%;
 }
 .hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li {
   height: 0.8rem;
   line-height: 0.8rem;
-  font-size: 0.25rem;
+  font-size: 0.24rem;
   border-bottom: 1px solid #ddd;
 }
 .hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li p {
@@ -234,6 +240,7 @@ body {
 }
 .hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li .click-span {
   padding-left: 0.25rem;
+  color: #bbb;
   background: url("../img/icon_01.png") left center no-repeat;
   background-size: 0.2rem;
 }
@@ -252,7 +259,7 @@ body {
   height: 100%;
 }
 .hot-tv .hot-intr .hot-intr-all .hot-intr-item .hot-day ul li:first-child .hot-tv-r {
-  width: 4rem;
+  width: 4.5rem;
   height: 1.29rem;
   margin-left: 0.2rem;
 }
@@ -273,8 +280,9 @@ body {
 }
 .hot-tv .hot-all {
   width: 100%;
-  height: 0.4rem;
-  line-height: 0.4rem;
+  height: 0.6rem;
+  border-top: 1px solid #ddd;
+  line-height: 0.6rem;
   font-size: 0.3rem;
   text-align: center;
 }
@@ -285,19 +293,21 @@ body {
   height: 100%;
 }
 .hero-strategy .share-title {
-  height: 0.5rem;
-  line-height: 0.5rem;
+  margin: 0 0.1rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border-bottom: 1px solid #ddd;
+}
+.hero-strategy .share-title h2 {
   font-size: 0.3rem;
-  margin: 0.1rem;
-  padding-bottom: 0.1rem;
-  padding-left: 0.4rem;
+  font-weight: bold;
   background: url("../img/icon_02.png") left center no-repeat;
   background-size: 0.3rem;
-  border-bottom: 1px solid #d3d3d4;
+  padding-left: 0.4rem;
 }
 .hero-strategy .share-hero {
   height: 0.9rem;
-  margin: 0.1rem 0.1rem 0;
+  margin: 0.1rem 0.1rem 0 0;
 }
 .hero-strategy .share-hero ul li {
   width: 0.9rem;
@@ -327,7 +337,10 @@ body {
 }
 .hero-strategy .share-hero-open {
   display: none;
-  width: 95%;
+  position: absolute;
+  background-color: #fff;
+  width: 97%;
+  height: 4rem;
   border: 1px solid #ddd;
   margin: 0.1rem auto 0;
   overflow: hidden;
@@ -339,14 +352,16 @@ body {
   position: relative;
 }
 .hero-strategy .share-hero-open .hero-img ul {
+  height: 100%;
   position: absolute;
 }
 .hero-strategy .share-hero-open .hero-img ul li {
   float: left;
+  width: 0.9rem;
+  height: 1.3rem;
   font-size: 0.2rem;
   text-align: center;
   margin-right: 0.2rem;
-  margin-bottom: 0.1rem;
 }
 .hero-strategy .share-hero-open .hero-type ul li {
   width: 1.5rem;
@@ -382,7 +397,7 @@ body {
 }
 .hero-strategy .share-hero-tv .share-hero-middle {
   border-bottom: 1px solid #ddd;
-  margin: 0.2rem 0.2rem 0 0.2rem;
+  margin: 0.1rem 0.1rem 0 0.1rem;
 }
 .hero-strategy .share-hero-tv .share-hero-middle ul {
   height: 100%;
@@ -391,7 +406,7 @@ body {
   float: left;
   width: 3.42rem;
   padding-bottom: 0.2rem;
-  margin-right: 0.2rem;
+  margin-right: 0.42rem;
 }
 .hero-strategy .share-hero-tv .share-hero-middle ul li:last-child {
   margin-right: 0;
@@ -416,12 +431,16 @@ body {
   background-size: 0.2rem;
 }
 .hero-strategy .share-hero-tv .share-hero-mag {
-  padding: 0.2rem;
+  margin: 0 0.1rem;
 }
 .hero-strategy .share-hero-tv .share-hero-mag ul li {
-  height: 1.6rem;
+  height: 1.5rem;
   width: 100%;
   border-bottom: 1px solid #ddd;
+  padding: 0.2rem 0;
+}
+.hero-strategy .share-hero-tv .share-hero-mag ul li:last-child {
+  border-bottom: none;
 }
 .hero-strategy .share-hero-tv .share-hero-mag ul li img {
   width: 2.3rem;
@@ -443,6 +462,9 @@ body {
   font-size: 0.2rem;
 }
 .hero-strategy .share-hero-tv .more-hero-about {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border-top: 1px solid #ddd;
   font-size: 0.25rem;
   text-align: center;
 }
@@ -452,31 +474,88 @@ body {
 }
 /*------------------ wonderful-time --------------------*/
 .wonderful-time {
+  width: 100%;
+  height: 100%;
   margin-top: 0.2rem;
   background-color: #fff;
 }
 .wonderful-time .wonderful-title {
-  margin: 0 0.5rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
   font-size: 0.3rem;
-  font-weight: bold;
-  padding: 0.1rem 0;
+  margin: 0 0.1rem;
   padding-left: 0.4rem;
   background: url("../img/icon_03.png") left center no-repeat;
   background-size: 0.3rem;
   border-bottom: 1px solid #ddd;
 }
+.wonderful-time .wonderful-title h2 {
+  font-weight: bold;
+}
 .wonderful-time .wonderful-tv-title {
-  margin: 0.1rem 0.5rem;
+  margin: 0.2rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
 }
 .wonderful-time .wonderful-tv-title ul li {
-  margin-right: 0.8rem;
-  font-size: 0.25rem;
+  margin: 0 0.37rem;
+  font-size: 0.3rem;
+  font-weight: bold;
   float: left;
+}
+.wonderful-time .wonderful-tv-title ul li:first-child {
+  margin-left: 0;
 }
 .wonderful-time .wonderful-tv-title ul li:last-child {
   margin-right: 0;
 }
 .wonderful-time .wonderful-tv-title ul li.current {
   color: #db9e3f;
-  border-bottom: 1px solid #db9e3f;
+  border-bottom: 2px solid #db9e3f;
+}
+.wonderful-time .wonderful-tv {
+  width: 7.29rem;
+  height: 3.2rem;
+  margin: 0.1rem;
+  backface-visibility: hidden;
+  overflow: hidden;
+  position: relative;
+}
+.wonderful-time .wonderful-tv ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wonderful-time .wonderful-tv ul li {
+  float: left;
+  width: 3.5rem;
+  height: 3.4rem;
+  font-size: 0.25rem;
+  margin-right: 0.25rem;
+}
+.wonderful-time .wonderful-tv ul li:last-child {
+  margin-right: 0;
+}
+.wonderful-time .wonderful-tv ul li span {
+  color: #bbb;
+  font-size: 0.25rem;
+}
+.wonderful-time .wonderful-tv ul li span.click-tv {
+  padding-left: 0.3rem;
+  background: url("../img/icon_01.png") left center no-repeat;
+  background-size: 0.25rem;
+}
+.wonderful-time .wonderful-tv ul li span.click-time {
+  float: right;
+}
+.wonderful-time .more-tv {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.25rem;
+  text-align: center;
+}
+.wonderful-time .more-tv span {
+  color: #d59b40;
+  margin: 0 0.1rem;
 }

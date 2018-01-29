@@ -2,6 +2,9 @@
     background:#f1f1f1;
     position:relative;
 }
+.uncurrent{
+	display:none;
+}
 /*------头部广告------*/
 .home-top {
   position:fixed;
@@ -54,7 +57,7 @@
   background: url("../img/index.png") -1.18rem -6.18rem no-repeat;
   background-size: 7.5rem;
 }
-.home-bottom {
+.home-bottom{
   background: #db9e3f;
   height: .8rem;
   width: 100%;
@@ -63,10 +66,10 @@
   z-index: 10;
   margin-top:1rem;
 }
-.home-bottom ul {
+.home-bottom ul{
   height: 100%;
 }
-.home-bottom ul li {
+.home-bottom ul li{
   width: 33.33333%;
   height:.8rem;
   float: left;
@@ -92,22 +95,21 @@
 	color:#d59b40;
 }
 .container{
-	/*padding:.1rem;*/
 	height: 100%;
 }
 /*tab-controller-container开始*/
 .tab-controller-container{
 	height:.6rem;
 }
-.tab-spr, .tab-wdspr, .tab-twspr{
+.tab-spr{
     width:7.1rem;
-	height:.7rem;
-    margin: 0 auto;
+	height:.6rem;
+    margin: .15rem auto 0;
 }
 .tab-controller-container .tab-controller li{
 	float: left;
-	height:.7rem;
-	line-height: .7rem;
+	height:.6rem;
+	line-height: .6rem;
 	margin: 0 .12rem;
 }
 .tab-controller-container .tab-controller li:first-child{
@@ -117,18 +119,14 @@
 	margin-right: 0;
 }
 .tab-controller-container .tab-controller li a{
-	display: block;
-	height:.69rem;
-	line-height: .69rem;
+	display:block;
+	height:.59rem;
+	line-height: .59rem;
 	font-size:.26rem;
-	color:#333;
-	
+	color:#343440;	
 }
 /*tab-controller-container结束*/
 /*王者荣耀职业联赛开始*/
-.slide-content{
-	
-}
 .mc_block {
     width:7.1rem; 
     padding:.1rem; 
@@ -152,7 +150,6 @@
     font-size:12px;
     margin-top:.06rem;
 }
-
 .mc_lineinfo{
     width: 7.1rem;
     height:.4rem;
@@ -172,7 +169,6 @@
     color: #8D949F;
     margin-left: 3%;
 }
-
 .mc_video{
     width:7.5rem;
     height:3.6rem;
@@ -263,6 +259,7 @@
 /*加载更多*/
 .load-more{
 	width:6.4rem;
+	height: .49rem;
 	margin:.2rem auto;
 	border: 1px ;
 	background: #e6e6e6;

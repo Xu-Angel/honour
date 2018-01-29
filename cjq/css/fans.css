@@ -147,14 +147,14 @@
 .warp .penl .penl-top .penl-time {
   font-size: 0.26rem;
 }
-.warp .penl .penl-top .penl-time .penl-day {
+.warp .penl .penl-top .penl-time span {
   border-radius: 0.05rem;
   border: 1px solid #959595;
   color: #959595;
   padding: 0.02rem 0.3rem;
   margin-right: 0.1rem;
 }
-.warp .penl .penl-top .penl-time .penl-day.current {
+.warp .penl .penl-top .penl-time span.now {
   color: #857c28;
   border: 1px solid #908224;
   background-color: #131f2a;
@@ -162,6 +162,7 @@
 .warp .penl .penl-mag-l {
   width: 100%;
   height: 2.7rem;
+  margin-top: 0.2rem;
   overflow: hidden;
   backface-visibility: hidden;
   background: rgba(25, 35, 49, 0.74);
@@ -170,15 +171,21 @@
 }
 .warp .penl .penl-mag-l .mag-mou {
   position: absolute;
-  width: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 95%;
   padding: 0 0.2rem;
   margin-top: 0.2rem;
 }
 .warp .penl .penl-mag-l .mag-mou ul li {
   height: 0.6rem;
-  line-height: 0.5rem;
+  line-height: 0.6rem;
   border-bottom: 1px solid #273a4a;
   font-size: 0.25rem;
+}
+.warp .penl .penl-mag-l .mag-mou ul li:last-child {
+  border-bottom: none;
 }
 .warp .penl .penl-mag-l .mag-mou ul li span {
   color: #9eb1d5;

@@ -137,10 +137,10 @@ html,body{
     top: 13/@r;
   }
   input{
-    width: 96%;
+    width: 95%;
     height: 50/@r;
     font-size: 20/@r;
-    padding-left: 25/@r;
+    padding-left: 35/@r;
     border: 1px solid #d3d3d4;
   }
 }
@@ -148,90 +148,98 @@ html,body{
 .carousel{
   position: relative;
   width: 100%;
-  height: 255/@r;
-  overflow: hidden;
-  ul{
-    height: 255/@r;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    backface-visibility: hidden;
+  height: 270/@r;
+  .carousel-img{
+    width: 600%;
+    height: 100%;
+    margin: 0 auto;
     li{
       float: left;
-      width: 100%;
+      width: 16.6666666%;
       height: 100%;
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-size: cover;
-      text-align: center;
+
     }
   }
+    .carousel-doc{
+      position: absolute;
+      right: 0;
+      bottom: 10/@r;
+      li{
+        width: 20/@r;
+        height: 20/@r;
+        background-color: #fff;
+        border-radius: 5/@r;
+        float: left;
+        margin-right: 20/@r;
+        &.current{
+          background-color: #4b67af;
+        }
+      }
+    }
 }
 /*------------hot-tv--------------*/
 .hot-tv{
   background-color: #fff;
   height: 100%;
   margin-top: 20/@r;
-  padding: 0 10/@r;
   .hot-top{
-    height: 60/@r;
-    border-bottom: 1px solid #ddd;
-    .hot-title{
-      font-size: 30/@r;
-      font-weight: bold;
-      background: url("../img/icon_01.png") left center no-repeat;
-      background-size: 30/@r;
-      padding-left: 40/@r;
-    }
+       height: 60/@r;
+       line-height: 60/@r;
+       border-bottom: 1px solid #ddd;
+        margin: 0 10/@r;
+       .hot-title{
+         font-size: 30/@r;
+         font-weight: bold;
+         background: url("../img/icon_01.png") left center no-repeat;
+         background-size: 30/@r;
+         padding-left: 40/@r;
+       }
     ul{
       float: right;
       li{
+        height: 50/@r;
+        line-height: 50/@r;
         float: left;
         font-size: 30/@r;
         margin-right: 15/@r;
         color: #343440;
-        &:first-child{
-          border-bottom: 1px solid #db9e3f;
+        &.now{
+          border-bottom: 2px solid #db9e3f;
           color: #db9e3f;
         }
       }
     }
   }
   .hot-intr{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    backface-visibility: hidden;
-    height: 320/@r;
-    margin-left: 30/@r;
-    margin-top: 15/@r;
+    width: 97%;
+    height: 300/@r;
+    margin: 10/@r;
     .hot-intr-all{
+      height: 300/@r;
+      position: relative;
+      overflow: hidden;
+      backface-visibility: hidden;
       .hot-intr-item{
+        width: 100%;
         float: left;
         position: absolute;
         top: 0;
         left: 0;
-        /*visibility: hidden;*/
+        visibility: hidden;
         .hot-day{
-          height: 100%;
           ul{
-            position: relative;
-            overflow: hidden;
-            backface-visibility: hidden;
             height: 100%;
             li{
               height: 80/@r;
               line-height: 80/@r;
-              font-size: 25/@r;
+              font-size: 24/@r;
               border-bottom: 1px solid #ddd;
               p{
                 display: inline-block;
               }
               .click-span{
                 padding-left: 25/@r;
+                color: #bbb;
                 background: url("../img/icon_01.png") left center no-repeat;
                 background-size: 20/@r;
               }
@@ -249,7 +257,7 @@ html,body{
                   }
                 }
                 .hot-tv-r{
-                  width: 400/@r;
+                  width: 450/@r;
                   height: 129/@r;
                   margin-left: 20/@r;
                   .hot-day-click{
@@ -277,8 +285,9 @@ html,body{
   }
   .hot-all{
     width: 100%;
-    height: 40/@r;
-    line-height: 40/@r;
+    height: 60/@r;
+    border-top: 1px solid #ddd;
+    line-height: 60/@r;
     font-size: 30/@r;
     text-align: center;
   }
@@ -288,20 +297,22 @@ html,body{
   margin-top: 20/@r;
   background-color: #fff;
   height: 100%;
-  .share-title{
-    height: 50/@r;
-    line-height: 50/@r;
-    font-size: 30/@r;
-    margin: 10/@r;
-    padding-bottom: 10/@r;
-    padding-left: 40/@r;
-    background: url("../img/icon_02.png") left center no-repeat;
-    background-size: 30/@r;
-    border-bottom: 1px solid #d3d3d4;
+  .share-title {
+    margin: 0 10/@r;
+    height: 60/@r;
+    line-height: 60/@r;
+    border-bottom: 1px solid #ddd;
+    h2 {
+      font-size: 30/@r;
+      font-weight: bold;
+      background: url("../img/icon_02.png") left center no-repeat;
+      background-size: 30/@r;
+      padding-left: 40/@r;
+    }
   }
   .share-hero{
     height: 90/@r;
-    margin: 10/@r 10/@r 0;
+    margin: 10/@r 10/@r 0 0;
     ul{
       li{
         width: 90/@r;
@@ -333,7 +344,10 @@ html,body{
   }
   .share-hero-open{
     display: none;
-    width: 95%;
+    position: absolute;
+    background-color: #fff;
+    width: 97%;
+    height: 400/@r;
     border: 1px solid #ddd;
     margin: 10/@r auto 0;
     overflow: hidden;
@@ -343,13 +357,15 @@ html,body{
       padding: 15/@r;
       position: relative;
       ul{
+        height: 100%;
         position: absolute;
         li{
           float: left;
+          width: 90/@r;
+          height:130/@r;
           font-size: 20/@r;
           text-align: center;
           margin-right: 20/@r;
-          margin-bottom: 10/@r;
         }
       }
     }
@@ -391,14 +407,14 @@ html,body{
     }
     .share-hero-middle{
       border-bottom: 1px solid #ddd;
-      margin: 20/@r 20/@r 0 20/@r;
+      margin: 10/@r 10/@r 0 10/@r;
       ul{
         height: 100%;
         li{
           float: left;
           width: 342/@r;
           padding-bottom: 20/@r;
-          margin-right: 20/@r;
+          margin-right: 42/@r;
           &:last-child{
             margin-right: 0;
           }
@@ -425,12 +441,16 @@ html,body{
       }
     }
     .share-hero-mag{
-      padding: 20/@r;
+      margin: 0 10/@r;
       ul{
         li{
-          height: 160/@r;
+          height: 150/@r;
           width: 100%;
           border-bottom: 1px solid #ddd;
+          padding: 20/@r 0;
+          &:last-child{
+              border-bottom: none;
+          }
           img{
             width: 230/@r;
             height: 140/@r;
@@ -454,6 +474,9 @@ html,body{
       }
     }
     .more-hero-about{
+      height: 60/@r;
+      line-height: 60/@r;
+      border-top: 1px solid #ddd;
       font-size: 25/@r;
       text-align: center;
       span{
@@ -465,37 +488,91 @@ html,body{
 }
 /*------------------ wonderful-time --------------------*/
 .wonderful-time{
+  width: 100%;
+  height:100%;
   margin-top: 20/@r;
   background-color: #fff;
   .wonderful-title{
-    margin: 0 50/@r;
+    height: 60/@r;
+    line-height: 60/@r;
     font-size: 30/@r;
-    font-weight: bold;
-    padding: 10/@r 0;
+    margin: 0 10/@r;
     padding-left: 40/@r;
     background: url("../img/icon_03.png") left center no-repeat;
     background-size: 30/@r;
     border-bottom: 1px solid #ddd;
+    h2{
+      font-weight: bold;
+    }
   }
   .wonderful-tv-title{
-    margin: 10/@r 50/@r;
+    margin: 20/@r;
+    height: 60/@r;
+    line-height: 60/@r;
     ul{
       li{
-        margin-right: 80/@r;
-        font-size: 25/@r;
+        margin: 0 37/@r;
+        font-size: 30/@r;
+        font-weight: bold;
         float: left;
+        &:first-child{
+          margin-left: 0;
+        }
         &:last-child{
           margin-right: 0;
         }
         &.current{
           color: #db9e3f;
-          border-bottom: 1px solid #db9e3f;
+          border-bottom: 2px solid #db9e3f;
         }
       }
     }
   }
   .wonderful-tv{
-
+    width: 729/@r;
+    height: 320/@r;
+    margin: 10/@r;
+    backface-visibility: hidden;
+    overflow: hidden;
+    position: relative;
+    ul{
+      position: absolute;
+      top: 0;
+      left: 0;
+      li{
+        float: left;
+        width: 350/@r;
+        height: 340/@r;
+        font-size: 25/@r;
+        margin-right: 25/@r;
+        &:last-child{
+          margin-right: 0;
+        }
+        span{
+          color: #bbb;
+          font-size: 25/@r;
+          &.click-tv{
+            padding-left: 30/@r;
+            background: url("../img/icon_01.png") left center no-repeat;
+            background-size: 25/@r;
+          }
+          &.click-time{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  .more-tv{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.25rem;
+    text-align: center;
+    span{
+      color: #d59b40;
+      margin: 0 0.1rem;
+    }
   }
 }
 

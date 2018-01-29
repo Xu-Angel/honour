@@ -144,7 +144,7 @@
 .warp .gocenter-sp {
   width: 100%;
   height: 100%;
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
 }
 .warp .gocenter-sp h1 {
   height: 0.4rem;
@@ -156,9 +156,9 @@
   margin-left: 3%;
 }
 .warp .gocenter-sp .sp-con {
-  width: 93%;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
-  padding: 3.171%;
   /*sp-game end*/
 }
 .warp .gocenter-sp .sp-con .sp-ct {
@@ -186,6 +186,7 @@
 }
 .warp .gocenter-sp .sp-con .sp-ct ul li:last-child {
   margin-right: 0;
+  float: right;
 }
 .warp .gocenter-sp .sp-con .sp-ct ul li.current span {
   background: url("../img/go_icon_05.png") no-repeat center;
@@ -240,13 +241,17 @@
 }
 .warp .gocenter-sp .sp-con .sp-game {
   width: 100%;
-  height: 5rem;
+  height: 7.5rem;
   position: relative;
+  backface-visibility: hidden;
 }
 .warp .gocenter-sp .sp-con .sp-game .sp-gamecont {
   width: 100%;
   position: absolute;
-  display: none;
+  top: 0;
+  left: 0;
+  /**/
+  visibility: hidden;
 }
 .warp .gocenter-sp .sp-con .sp-game .sp-gamecont h2 {
   font-size: 0.3rem;

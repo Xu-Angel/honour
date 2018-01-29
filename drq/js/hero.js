@@ -2,15 +2,27 @@ window.onload = function(){
 	point('.hero-nav');
 }
 function point(str){
-	var parentBox = document.querySelector(str);
-	var childBox = parentBox.children[0];
-	drq.tap(childBox,function(){	
-		var currLi = event.target.parentNode;
-		var liArr = childBox.children;
-		for(var i=0;i<liArr.length;i++){
-			liArr[i].index = i;
-			liArr[i].className="";
-		}
-		currLi.className ="now";
-	})
+	var parentBox = document.querySelector(str);//ul盒子
+	var childBox = parentBox.children[0];//ul
+	var liArr=childBox.children;//li
+	var parentBox1 = document.querySelector('.hero-list');//slideitem盒子
+	var slideItem=parentBox1.children;//sldeitem
+	//循环给li绑定点击事件
+	for(var i=0;i<liArr.length;i++){
+		liArr[i].index = i;
+		drq.tap(liArr[i],function(){
+			//当前的li
+			var currentLi=event.target.parentNode;
+			//当前的索引
+			var index=currentLi.index;
+			//排他
+			for(var i=0;i<liArr.length;i++){
+				liArr[i].className="";
+				slideItem[i].style.display="none";
+			}
+			//当前li的样式和当前slideitem的显隐
+			liArr[index].className ="now";
+			slideItem[index].style.display="block";
+		})
+	}
 }

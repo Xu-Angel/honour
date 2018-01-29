@@ -116,7 +116,7 @@
                 </ul>
             </div>
             <div class="sp-game">
-                <div class="sp-gamecont " style="display: block;">
+                <div class="sp-gamecont" style="visibility: visible">
                     <h2>迷雾模式，MOBA经典视野玩法</h2>
                     <p>
                         迷雾模式中，大部分区域被迷雾笼罩，视野受到限制。我们需要通过插眼和反眼的默契配合，掌控游戏中的视野。MOBA经典视野玩法，更加考验每一位召唤师的意识和操作，不断挑战自我！
@@ -170,17 +170,21 @@
     //lies的点击事件
     for(var i=0;i<lies.length;i++){
         lies[i].index = i;
-        console.info(spGamecont[i].index);
+        spGamecont[i].index = i;
+        //console.info(spGamecont[i].index)
         lies[i].onclick = function () {
             for(var i=0;i<lies.length;i++){
                 lies[i].className = '';
+                //spGamecont[i].style.display = 'none'
+                spGamecont[i].style.visibility = 'hidden';
+                spGamecont[this.index].style.transition = '';
+                spGamecont[i].style.transform='translateX(100%)';
             }
             this.className = 'current';
-            for(var j=0;j<spGamecont.length;j++){
-                spGamecont[j].style.display = 'none'
-            }
             //记录属性
-            spGamecont[this.index].style.display = 'block'
+            spGamecont[this.index].style.visibility = 'visible';
+            spGamecont[this.index].style.transition = 'transform 1s ease';
+            spGamecont[this.index].style.transform='translateX(0)';
         }
     }
 </script>
