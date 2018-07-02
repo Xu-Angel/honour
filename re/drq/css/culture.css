@@ -1,0 +1,345 @@
+html,
+body,
+div,
+p,
+ul,
+li,
+ol,
+form,
+input,
+select,
+option,
+textarea,
+a,
+span,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  list-style: none;
+}
+a{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+body,html {
+  background: #121418;
+  color: #e3c27f;
+  font-size: 0.24rem;
+}
+.clearfix{
+	content: "";
+	clear:both;
+}
+.wrap {
+  position:relative;
+  font-family: "Microsoft YaHei";
+}
+/*轮播图导航开始*/
+.wrap .line {
+    width: 6.3rem;
+    height:5rem;
+    position:absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -3.15rem;
+}
+.top_part{
+    overflow: hidden;
+    height:6.86rem;
+    padding-bottom: .45rem;
+}
+.part{
+    width:100%;
+    background: #15181d;
+}
+.top_slide{
+    position: relative;
+    width: 7.1rem;
+    height:4rem;
+    margin:.2rem auto 0; 
+}
+.swiper_container{
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+    position:relative;
+    overflow:hidden;
+    z-index: 1;
+    border: 1px solid #7f7866; 
+}
+.swiper_wrapper{
+    position:relative;
+    width:500%;
+    height:100%;
+    z-index: 1;
+    display:flex;
+    box-sizing:content-box;
+    -webkit-box-sizing: content-box;
+}
+.swiper_slide{
+    width:100%;
+    float:left;
+    position:relative;
+    
+}
+.swiper_slide a{
+	width: 100%;
+  height:100%;
+  display: block;
+  position:relative;
+  box-sizing: content-box;
+}
+.swiper_slide img{
+	width: 7.1rem;
+	height:100%;
+}
+img{
+	width:100%;
+	border:none;
+	display:block;
+}
+.swiper_slide p{
+	position: absolute;
+	left: .3rem;
+	bottom:.15rem;
+	font-size:.3rem;
+	color:#fff;
+	z-index:5;
+}
+.swiper_slide a:after{
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 1.2rem;
+	bottom: 0;
+	left: 0;
+	z-index: 4;
+	background:-webkit-linear-gradient(rgba(22, 42, 55, 0), #000);
+}
+.swiper_slide_point{
+	width: 0.75rem;
+	position: absolute;
+	left: 6rem;
+	bottom: .2rem;
+	z-index:10;
+}
+.swiper_slide_point span{
+	width:.15rem;
+	height:.15rem;
+	display: block;
+	background: #fff;
+	float: left;
+	opacity: 1;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin:0 .05rem;
+}
+.swiper_slide_point .current{
+	display: block;
+	width:.15rem;
+	height:.15rem;
+	border: 1px solid #E3C27F;
+	background: #E3C27F;
+}
+/*导航开始*/
+.part .content{
+    width: 7.5rem;
+    height: 1.59rem;
+    margin: 0 auto;
+}
+.content .entrance{
+	margin:.6rem auto 0;
+	width: 100%;
+}
+.content .entrance li{
+	display: inline-block;
+	float: left;
+	width: 2.5rem;
+	height: 1.59rem;
+}
+.content .entrance li a{
+	display: block;
+}
+.sp{
+	display: block;
+	width:1.08rem;
+	height:1.08rem;
+	margin: 0 auto;
+	background: url(../img/sp.png) no-repeat;
+	background-size:4.14rem 2.56rem;
+}
+.content .entrance li:first-child .sp{
+	background-position:-.1rem -.1rem;
+}
+.content .entrance li:nth-child(2) .sp{
+	background-position:-1.38rem -.1rem;
+}
+.content .entrance li:nth-child(3) .sp{
+	background-position:-.1rem -1.38rem ;
+}
+.content .entrance li p{
+	font-size:.24rem;
+	color:#E3C27F;
+	text-align: center;
+	margin-top:.2rem;
+}
+.content .entrance li:nth-child(2){
+	width:2.45rem;
+	border-left:1px dashed #39362e;
+	border-right:1px dashed #39362e;
+}
+/*轮播图导航结束*/
+/*王者历史课开始*/
+.history_part {
+    margin-top: .3rem;
+    padding: .4rem 0;
+}
+.part .content1{
+    width: 7.1rem;
+    margin: 0 auto;
+}
+.part .content1 .title{
+    position: relative;
+    padding-left: .2rem;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid #39362e;
+}
+.part .content1 .title em{
+    position: absolute;
+    top: .1rem;
+    left: 0;
+    width: .04rem;
+    height: .26rem;
+    background: #e3c27f;
+}
+.part .content1 .title p{
+	font-size:.3rem;
+}
+.history_part .sp{
+    display: inline-block;
+    margin-left: .16rem;
+    width: 1.33rem;
+    height: .22rem;
+    background-position: -2.66rem -.1rem;
+}
+.title a{
+	position: absolute;
+	top:0;
+	right:0;
+	font-size: .26rem;
+	color:#e3c27f;
+}
+.part ul.list{
+	margin-top:.32rem;
+}
+.part ul.list li{
+	display:inline-block;
+	float:left;
+	width:3.52rem;
+	margin-right:.06rem; ;
+}
+.part ul.list li .top{
+    position: relative;
+    width: 3.52rem;
+    height: 2rem;
+}
+.part ul.list li .top img{
+    height: 100%;
+}
+.part ul.list li .top span.time{
+    left: .16rem;
+}
+.part ul.list li .top span{
+    position:absolute;
+    bottom:.14rem;
+    color:#fff;
+}
+.part ul.list li .top span.date{
+    right: .16rem;
+}
+.part ul.list li .top span{
+    position: absolute;
+    bottom: .14rem;
+    color: #fff;
+}
+.part ul.list li .s_title {
+    margin-top:.15rem;
+    color:#fff;
+    font-size:.26rem;
+    height:.90rem;
+    overflow:hidden;
+}
+.part ul.list li .play_num {
+    margin-top:.15rem;
+    color:#54534f;
+    font-size:.22rem;
+}
+.part ul.list li:last-child {
+    margin-right: 0;
+}
+/*王者历史课结束*/
+/*王者诗会开始*/
+.poem_part{
+    margin-top: .3rem;
+    padding: .4rem 0;
+}
+.poem_part .sp {
+    display: inline-block;
+    margin-left: .16rem;
+    width: 1.33rem;
+    height: .22rem;
+    background-position: -2.66rem -.94rem;
+}
+/*王者诗会结束*/
+ /*历史上的TA开始*/
+.ta_part{
+	margin-top: .3rem;
+    padding: .4rem 0;
+}
+.ta_part .sp {
+    display: inline-block;
+    margin-left: .16rem;
+    width: 1.33rem;
+    height: .22rem;
+    background-position: -2.66rem -.52rem;
+}
+.ta_part ul.list li {
+    width: 1.66rem;
+    margin-right: .15rem;
+}
+.ta_part ul.list li .s_title1{
+    text-align: center;
+}
+.ta_part ul.list li .s_title1{
+    margin-top:.15rem;
+    color:#fff;
+    font-size:.26rem;
+    height:.62rem;
+    overflow:hidden;
+}
+ /*历史上的TA结束*/
+/*王者音乐听开始*/
+.music_part {
+    margin-top: .3rem;
+    margin-bottom: .1rem;
+    padding: .4rem 0;
+}
+.music_part .sp {
+    display: inline-block;
+    margin-left: .16rem;
+    width: 1.33rem;
+    height: .22rem;
+    background-position: -2.66rem -1.36rem;
+}
+/*王者音乐听结束*/
