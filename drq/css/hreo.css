@@ -1,4 +1,4 @@
-.wrap{
+﻿.wrap{
     background:#f1f1f1;
     position:relative;
 }
@@ -83,57 +83,45 @@
   font-size:.26rem;
   text-indent: 0;
 }
-
 /*英雄列表开始*/
 .container {
-  padding: 0 .24rem;
+  padding:0 .24rem;
 }
-
-.container ul {
-  list-style: none;
-  overflow: hidden;
+.container ul li{
+  float:left;
 }
-
-.container ul li {
-  float: left;
+.hero-spr{
+    width:7.1rem;
+	height:.6rem;
+    margin: 0 auto;
 }
-
-.hero-nav {
-  margin-top: .15rem;
+.hero-nav{
+  margin-top:.15rem;
 }
-
 .hero-nav li{
-  margin-right: .54rem;
-  height:.3rem;
-  line-height:.3rem;
+  margin-right:.5rem;
+  height:.6rem;
+  line-height:.6rem;
 }
-
-/* .hero-nav li:first-child {
-  text-align: left;
-} */
-
-.hero-nav li:last-child {
-  margin-right: 0;
+.hero-nav .hero-control li:first-child{
+  margin-left:0;
 } 
-
-.hero-nav a {
-  font-size: .26rem;
-  color: #343440;
-  border-bottom: 2px solid transparent;
-  padding-bottom: .1rem;
-  display: inline-block;
-  /* width: .49rem; */
+.hero-nav .hero-control li:last-child{
+  margin-right:0;
+} 
+.hero-nav a{
+  font-size:.26rem;
+  color:#343440;
+  display:block;
+  height:.59rem;
+  line-height:.59rem;
 }
-
-.hero-nav .hero-current a {
-  color: #db9e3f;
-  border-bottom: 2px solid #db9e3f;
+.slide-item{
+	display:none;
 }
-
-.hero-list {
+.hero-list{
   margin-top: .32rem;
 }
-
 .hero-list li{
   width: 1.12rem;
   height: 1.6rem;
@@ -141,22 +129,19 @@
   overflow: hidden;
   margin-bottom:.28rem;
 }
-
 .hero-list li:nth-child(5n+5) {
-  margin-right: 0;
+  margin-right:0;
 }
-
 .hero-list li a{
   position: relative;
   display:block;
   width: 100%;
-  height: 100%;
-  font-size: .2rem;
+  height:100%;
+  font-size:.2rem;
   color: #343440;
   text-align:center;
 }
-
-.hero-list li a:after {
+.hero-list li a:after{
   content: '';
   position: absolute;
   top: 0;
@@ -164,19 +149,17 @@
   width: 100%;
   height: 1.12rem;
   z-index: 5;
-  outline: .02rem solid #fff;
+  outline:.02rem solid #fff;
   box-shadow: 0 0 0 0.05rem #fff;
-  border-radius: .04rem;
+  border-radius:.04rem;
   background: transparent;
 }
-
 .hero-list .hero-img{
   position: relative;
   width: 100%;
   height: 1.12rem;
   overflow: hidden;
 }
-
 .hero-list li img{
   position: absolute;
   width: 110%;
@@ -185,14 +168,13 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-.hero-list li h3 {
+.hero-list li h3{
   line-height: .6rem;
 }
-.hero-nav ul li.now{
+.hero-nav .hero-control li.now{
 	background:#f1f1f1;
 }
-.hero-nav ul li.now a{
-	border-bottom:.02rem solid #d59b40;
-	color:#d59b40;
+.hero-nav .hero-control li.now a{
+	border-bottom:.02rem solid #db9e3f;
+	color:#db9e3f;
 }

@@ -41,5 +41,32 @@ function animate(obj,target,sp) {
 
 }
 
-/*-------------------carousel----------------------------*/
+/*-------------------选项卡----------------------------*/
+
+
+//获取到日周月
+var hotTop = document.querySelector('.penl-time');
+
+var hotLies = hotTop.children;
+console.info(hotLies)
+//获取到要切换的选项卡
+var hotDay = document.querySelector('.penl-mag-l');
+var hotUls = hotDay.children;
+console.info(hotUls);
+//遍历点击事件
+for (var y=0;y<hotLies.length;y++){
+    //获取索引值
+    hotLies[y].index = y;
+    hotUls[y].index =y;
+    //点击事件
+    hotLies[y].addEventListener('click',function () {
+        for (var j=0;j<hotLies.length;j++){
+            hotLies[j].className = '';
+            hotUls[j].style.visibility = 'hidden';
+        }
+        this.className = 'now';
+
+        hotUls[this.index].style.visibility = 'visible';
+    });
+}
 

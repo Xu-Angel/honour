@@ -146,7 +146,7 @@
   .gocenter-sp{
     width: 100%;
     height: 100%;
-    margin-top: 40/@r;
+    margin-top: 20/@r;
       h1{
         height: 40/@r;
         line-height: 40/@r;
@@ -157,9 +157,10 @@
         margin-left: 3%;
       }
     .sp-con{
-      width: 93%;
+      width: 100%;
+      height: 100%;
       background-color: #fff;
-      padding: 3.171%;
+      //margin: 3.171%;
       .sp-ct{
         height: 40/@r;
         width: 90%;
@@ -184,6 +185,7 @@
             margin-right: 17%;
             &:last-child{
               margin-right: 0;
+              float: right;
             }
             &.current span{
               background: url("../img/go_icon_05.png") no-repeat center;
@@ -241,12 +243,16 @@
       }
       .sp-game{
         width: 100%;
-        height: 500/@r;
+        height: 750/@r;
         position: relative;
+        backface-visibility: hidden;
         .sp-gamecont{
           width: 100%;
           position: absolute;
-          display: none;
+          top: 0;
+          left: 0;
+          /**/
+          visibility: hidden;
           h2{
             font-size: 30/@r;
             margin: 50/@r 0;
